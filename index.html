@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турнир MobiChess | MOBIUZ</title>
+    
+    <!-- Подключение шрифтов и иконок -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <header class="header">
+        HEADER MOBIUZ
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="custom-container">
+        <!-- Breadcrumbs -->
+        <nav class="custom-breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <div class="custom-breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="/uz/" itemprop="item"><span itemprop="name">Bosh sahifa</span></a>
+                <meta itemprop="position" content="1">
+            </div>
+            <svg class="icon" aria-hidden="true" width="5" height="9"><use href="#icon-arrow" /></svg>
+            <div class="custom-breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="/uz/special-offers/" itemprop="item"><span itemprop="name">Aksiyalar</span></a>
+                <meta itemprop="position" content="2">
+            </div>
+            <svg class="icon" aria-hidden="true" width="5" height="9"><use href="#icon-arrow" /></svg>
+            <div class="custom-breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="/uz/special-offers/mobichess/" itemprop="item"><span itemprop="name">MobiChess</span></a>
+                <meta itemprop="position" content="3">
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-banner">
+                <div class="hero-content">
+                    <div class="hero-tags">
+                        <!-- <div class="hero-tag-mvd" style="background: rgba(227, 6, 19, 0.15); border-color: rgba(227, 6, 19, 0.3); color: #ff4d5a;">
+                            <i class="fa-solid fa-chess"></i> Совместно с idChess
+                        </div> -->
+                    </div>
+                    <h1 class="hero-title">Onlayn turnir <span>MobiChess</span></h1>
+                    <p class="hero-description">
+                        Mobiuz ilovasida keng ko‘lamli shaxmat onlayn turniriga qo‘shiling. O‘zbekiston shaxmat jamoasini qo‘llab-quvvatlang va <strong>200 000 000 so‘mlik</strong> sovrin jamg‘armasining bir qismi uchun kurashing
+                    </p>
+                    <div class="hero-features-pills">
+                        <div class="pill-item"><i class="fa-solid fa-trophy"></i> Turnirning 5 bosqichi</div>
+                        <div class="pill-item"><i class="fa-solid fa-mobile-screen"></i> Ilova ichida o‘ynash</div>
+                        <div class="pill-item"><i class="fa-solid fa-coins"></i> Pul mukofotlari va bonuslar</div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn-primary" style="padding: 14px 32px; font-size: 15px;" onclick="scrollToPricing()">
+                            Jadval va sovrinlar
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section style="margin-bottom: 50px;">
+            <h2 class="section-title">MobiChess turnirining o‘ziga xos xususiyatlari</h2>
+            <p class="section-subtitle">Butun O‘zbekiston bo‘ylab shaxmat ixlosmandlari uchun keng ko‘lamli tadbir</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+                    <h3>Sovrin jamg‘armasi</h3>
+                    <p>Umumiy jamg‘armasi 200 mln so‘mni tashkil etadi. 5 ta turnirning har bir g‘olibi 1, 2 va 3-o‘rinlar uchun katta miqdorda pul mukofotlari oladi</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-gift"></i></div>
+                    <h3>Qo‘shimcha imtiyozlar</h3>
+                    <p>5, 10 va 15-o‘rinlarni egallagan o‘yinchilar Mobiuz bonus ballari va 30 GB gacha bo‘lgan internet-to‘plamlarga ega bo‘ladilar</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Uzluksiz avtorizatsiya</h3>
+                    <p>Hech qanday murakkab ro‘yxatdan o‘tish yo‘q. Login va parollarni kiritmasdan Mobiuz ilovasidan idChess platformasiga to‘g‘ridan-to‘g‘ri o‘tish</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Halol o‘yin</h3>
+                    <p>Qat’iy antichit-nazorat. Botlar, sun’iy intellekt va shaxmat mexanizmlaridan foydalanish qat’iyan man etiladi va diskvalifikatsiya qilinishga sabab bo‘ladi</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tournaments Section -->
+        <section class="pricing-section" id="pricing">
+            <h2 class="section-title" style="text-align: center;">Turnirlar jadvali</h2>
+            <p class="section-subtitle" style="text-align: center;">Ro‘yxatdan o‘tish holatini kuzatib boring va bosqichingizni o‘tkazib yubormang</p>
+
+            <div class="pricing-grid" id="tournaments-grid">
+                <!-- Карточки турниров генерируются через JS -->
+            </div>
+
+            <div class="notice-banner">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <div>
+                    <strong>MUHIM SHART:</strong> Turnirda qatnashish uchun musobaqa boshlanishidan oldin platformada kamida <strong>10 ta foydalanuvchi o‘yinini</strong> o‘ynashingiz kerak. Har bir turnirda 3000 tagacha foydalanuvchi o‘yinchiga aylanishi mumkin.
+                </div>
+            </div>
+        </section>
+
+        <!-- Activation Steps -->
+        <section class="activation-box" id="how-it-works">
+            <h2 class="section-title">Qanday ishtirok etish mumkin?</h2>
+            <p class="section-subtitle" style="margin-bottom:0;">O‘yinga kirish uchun oddiy qadamlar</p>
+
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h4>Mobiuz ilovasini yuklab oling</h4>
+                    <p>Agar sizda hali mavjud bo‘lmasa, mobil ilovamizni o‘rnating va tizimga kiring</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h4>Vidjetni ochish</h4>
+                    <p>MobiChess bannerini toping va idChess o‘yin platformasiga o‘ting</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h4>Malakaga erishing</h4>
+                    <p>Rasmiy turnir boshlanishidan oldin 10 ta istalgan foydalanuvchi o‘yinini o‘ynang</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h4>G‘alaba qozoning</h4>
+                    <p>Turnir boshlanishida Arenaga kiring, 5 daqiqalik o‘yinlarni o‘ynang va reyting ballarini to‘plang!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="section-title" style="margin-bottom: 24px;">Savol-javob (FAQ)</h2>
+            
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Turnirda kimlar ishtirok etishi mumkin?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Ishtirok etishga 14 yoshga to‘lgan, muomalaga layoqatli, O‘zbekiston Respublikasi fuqarosi yoki yashash guvohnomasiga ega bo‘lgan, shuningdek, Mobiuz mobil ilovasi foydalanuvchilari bo‘lgan jismoniy shaxslar qo‘yiladi</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Turnirda ballar qanday hisoblanadi?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Partiyadagi g‘alaba uchun 2 ball, durang uchun 1 ball, mag‘lubiyat uchun 0 ball beriladi. Belgilangan 2 soat ichida barcha partiyalar yakuni bo‘yicha eng ko‘p ball to‘plagan o‘yinchi turnirda g‘olib chiqadi</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Pul mukofotimni qanday olaman?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Pul mukofotlari O‘zbekiston Respublikasi qonunchiligiga muvofiq JSHDS ushlab qolingan holda g‘olibning bank hisob raqamiga naqd pulsiz shaklda o‘tkaziladi. Siz "UMS" MCHJning shaxsiy ofisiga pasport va STIR/JSHSHIR bilan murojaat qilishingiz kerak bo‘ladi</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal Form -->
+    <div class="modal-overlay" id="sosModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="modal-title">Mobiuz mobil ilovasi</h3><br>
+            <p class="modal-subtitle">
+                Turnirlarda ishtirok etish va natijalarni ko‘rish uchun Mobiuz mobil ilovasidan foydalanish zarur. Davom etish uchun ilovasini o‘rnating
+            </p>
+            <a href="https://s.mobi.uz/asjv" class="btn-primary btn-full">Ilovani yuklab olish</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="header">
+        FOOTER MOBIUZ
+    </footer>
+
+    <!-- Иконка-стрелочка для хлебных крошек -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-arrow" width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-0.0320896 0.747688L0.675244 0.0138428L4.52791 4.0133C4.59001 4.07739 4.6393 4.1536 4.67293 4.23754C4.70656 4.32148 4.72388 4.4115 4.72388 4.50242C4.72388 4.59334 4.70656 4.68336 4.67293 4.7673C4.6393 4.85124 4.59001 4.92745 4.52791 4.99153L0.675244 8.99307L-0.031423 8.25923L3.58458 4.50346L-0.0320896 0.747688Z" fill="black"/>
+        </symbol>
+    </svg>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
