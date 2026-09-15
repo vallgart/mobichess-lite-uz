@@ -21,31 +21,31 @@ function scrollToPricing() {
                 id: 1, name: "Turnir 1",
                 regStart: new Date('2026-09-18T00:00:00+05:00'), regEnd: new Date('2026-09-24T23:59:59+05:00'),
                 eventStart: new Date('2026-09-25T19:00:00+05:00'), eventEnd: new Date('2026-09-25T21:00:00+05:00'),
-                prizes: ['8 000 000 UZS', '5 000 000 UZS', '3 000 000 UZS']
+                prizes: ['8 000 000 so‘m', '5 000 000 so‘m', '3 000 000 so‘m']
             },
             {
                 id: 2, name: "Turnir 2",
                 regStart: new Date('2026-10-02T00:00:00+05:00'), regEnd: new Date('2026-10-08T23:59:59+05:00'),
                 eventStart: new Date('2026-10-09T19:00:00+05:00'), eventEnd: new Date('2026-10-09T21:00:00+05:00'),
-                prizes: ['12 000 000 UZS', '8 000 000 UZS', '4 000 000 UZS']
+                prizes: ['12 000 000 so‘m', '8 000 000 so‘m', '4 000 000 so‘m']
             },
             {
                 id: 3, name: "Turnir 3",
                 regStart: new Date('2026-10-16T00:00:00+05:00'), regEnd: new Date('2026-10-22T23:59:59+05:00'),
                 eventStart: new Date('2026-10-23T19:00:00+05:00'), eventEnd: new Date('2026-10-23T21:00:00+05:00'),
-                prizes: ['15 000 000 UZS', '10 000 000 UZS', '5 000 000 UZS']
+                prizes: ['15 000 000 so‘m', '10 000 000 so‘m', '5 000 000 so‘m']
             },
             {
                 id: 4, name: "Turnir 4",
                 regStart: new Date('2026-11-06T00:00:00+05:00'), regEnd: new Date('2026-11-12T23:59:59+05:00'),
                 eventStart: new Date('2026-11-13T19:00:00+05:00'), eventEnd: new Date('2026-11-13T21:00:00+05:00'),
-                prizes: ['25 000 000 UZS', '15 000 000 UZS', '10 000 000 UZS']
+                prizes: ['25 000 000 so‘m', '15 000 000 so‘m', '10 000 000 so‘m']
             },
             {
                 id: 5, name: "Final turniri 5",
                 regStart: new Date('2026-11-20T00:00:00+05:00'), regEnd: new Date('2026-11-26T23:59:59+05:00'),
                 eventStart: new Date('2026-11-27T19:00:00+05:00'), eventEnd: new Date('2026-11-27T21:00:00+05:00'),
-                prizes: ['40 000 000 UZS', '25 000 000 UZS', '15 000 000 UZS']
+                prizes: ['40 000 000 so‘m', '25 000 000 so‘m', '15 000 000 so‘m']
             }
         ];
 
@@ -88,7 +88,7 @@ function scrollToPricing() {
                             Turnir yakunlandi
                         </div>`;
                 } else {
-                    const label = status.code === 'upcoming' ? 'Ro‘yxatdan o‘tish boshlanishidan oldin:' : 'Ro‘yxatdan o‘tish tugaguniga qadar:';
+                    const label = status.code === 'upcoming' ? 'Ro‘yxatdan o‘tish yakunlanishiga:' : 'Ro‘yxatdan o‘tish tugaguniga qadar:';
                     // Заменили плейсхолдер 00д 00ч 00м на узбекский 00k 00s 00m
                     dynamicContent = `
                         <div class="pricing-price" style="flex-direction: column; align-items: flex-start; margin: 15px 0;">
@@ -117,7 +117,7 @@ function scrollToPricing() {
                             </ul>
                         </div>
                         <button class="${status.code === 'finished' ? 'btn-outline' : 'btn-primary'} btn-full" onclick="openModal()">
-                            ${status.code === 'finished' ? 'Natijalarni ko‘rish' : 'Ishtirok etmoq'}
+                            ${status.code === 'finished' ? 'Natijalarni ko‘rish' : 'Ishtirok etish'}
                         </button>
                     </div>
                 `;
@@ -159,7 +159,7 @@ function scrollToPricing() {
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
                 // k - kun, s - soat, m - minut
-                el.innerHTML = `${days} kun ${hours} soat ${minutes} minut`;
+                el.innerHTML = `${days} kun ${hours} soat ${minutes} daqiqa`;
             }, 1000);
         }
 
